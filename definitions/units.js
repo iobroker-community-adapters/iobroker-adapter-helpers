@@ -158,4 +158,4 @@ const units = {
     }
 }
 
-module.exports = units;
+module.exports = {units};
