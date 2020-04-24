@@ -1,4 +1,4 @@
-let objectTypes = {
+const objectTypes = {
 	"state":{
 		"desc":"State. Parents should be of type channel, device, instance or host.",
 		"attrMandatory":[
@@ -191,7 +191,7 @@ let objectTypes = {
 	}
 };
 
-let commonAttributes = {
+const commonAttributes = {
 	"type":{
 		"desc":"Represents the data type of the object",
 		"type":[
@@ -619,3 +619,5 @@ let commonAttributes = {
 		"attrType":"string"
 	}
 };
+
+module.exports = {objectTypes, commonAttributes};

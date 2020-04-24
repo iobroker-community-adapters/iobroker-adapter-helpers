@@ -1,4 +1,4 @@
-let units = {
+const units = {
     "electricity":{
         "Watt": [
             {"unit": "GW", "exponent": 9},
@@ -157,3 +157,5 @@ let units = {
         ],
     }
 }
+
+module.exports = units;
