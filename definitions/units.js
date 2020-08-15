@@ -158,4 +158,21 @@ const units = {
     }
 }
 
-module.exports = {units};
+async function getExponentByUnit(unit){
+    for (const category in units){
+
+        for (const element in units[category]){
+
+            for (const item in units[category][element]){
+                if(units[category][element][item].unit === unit){
+                    return units[category][element][item].exponent;
+                }
+
+            }
+
+        }
+    }
+
+}
+
+module.exports = {units, getExponentByUnit};
