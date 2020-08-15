@@ -148,6 +148,13 @@ const roles_definition = {
 		"read":false,
 		"write":true
 	},
+	"button.press":{
+		"category":"button",
+		"desc":"Button press",
+		"type":"boolean",
+		"read":false,
+		"write":true
+	},
 	"button.stop":{
 		"category":[
 			"button",
@@ -748,6 +755,54 @@ const roles_definition = {
 		"read":true,
 		"write":true
 	},
+	"level.speed.fan": {
+		"category":"level",
+		"desc":"Speed of fan",
+		"type": [
+			"string",
+			"number"
+		],
+		"read":true,
+		"write":true,
+		"unit": "%",
+		"states":{
+			"0":"AUTO",
+			"1":"high",
+			"2":"low",
+			"3":"medium",
+			"4":"quiet",
+			"5":"turbo"
+		}
+	},
+	"level.swing": {
+		"category":"level",
+		"desc":"Angle or enumeration",
+		"type":"string",
+		"read":true,
+		"write":true,
+		"states":{
+			"0":"AUTO",
+			"1":"horizontal",
+			"2":"vertical",
+			"3":"stationary"
+		}
+	},
+	"level.mode.thermostat":{
+		"category":"level",
+		"desc":"Thermostat mode",
+		"type":"string",
+		"read":true,
+		"write":true,
+		"states":{
+			"0":"AUTO",
+			"1":"COOL",
+			"2":"DRY",
+			"3":"ECO",
+			"4":"FAN_ONLY",
+			"5":"HEAT",
+			"6":"OFF"
+		}
+	},
 	"switch":{
 		"category":"switch",
 		"desc":"Switch gerneral",
@@ -1251,6 +1306,79 @@ const roles_definition = {
 		"type":"object",
 		"read":true,
 		"write":true
+	},
+	"value.health.fat": {
+		"category":[
+			"value",
+			"health"
+		],
+		"desc":"Body fat index",
+		"type":"number",
+		"read":true,
+		"write":false,
+		"unit":[
+			"%"
+		]
+	},
+	"value.health.weight": {
+		"category":[
+			"value",
+			"health"
+		],
+		"desc":"Body weight",
+		"type":"number",
+		"read":true,
+		"write":false,
+		"unit":[
+			"kg",
+			"lbs"
+		]
+	},
+	"value.health.bmi": {
+		"category":[
+			"value",
+			"health"
+		],
+		"desc":"BMI index",
+		"type":"number",
+		"read":true,
+		"write":false
+	},
+	"value.health.calories": {
+		"category":[
+			"value",
+			"health"
+		],
+		"desc":"Burned calories",
+		"type":"number",
+		"read":true,
+		"write":false,
+		"unit":[
+			"kcal"
+		]
+	},
+	"value.health.steps": {
+		"category":[
+			"value",
+			"health"
+		],
+		"desc":"Steps done",
+		"type":"number",
+		"read":true,
+		"write":false
+	},
+	"value.health.bpm": {
+		"category":[
+			"value",
+			"health"
+		],
+		"desc":"Heart beats per minute",
+		"type":"number",
+		"read":true,
+		"write":false,
+		"unit":[
+			"bpm"
+		]
 	},
 	"value.temperature.windchill":{
 		"category":[
