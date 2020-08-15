@@ -405,7 +405,8 @@ const roles_definition = {
 		"write":false,
 		"unit":[
 			"mbar",
-			"bar"
+			"bar",
+			"hPa"
 		]
 	},
 	"value.distance":{
@@ -2162,4 +2163,4 @@ const roles_definition = {
 	}
 };
 
-module.exports = {roles_definition};
+module.exports = {roles: roles_definition};
