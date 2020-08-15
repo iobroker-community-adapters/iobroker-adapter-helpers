@@ -2162,4 +2162,4 @@ const roles_definition = {
 	}
 };
 
-module.exports = roles_definition;
+module.exports = {roles_definition};
