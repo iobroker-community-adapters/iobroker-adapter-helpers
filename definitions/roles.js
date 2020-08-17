@@ -132,7 +132,8 @@ const roles_definition = {
 		"desc":"Noise sensor",
 		"type":"boolean",
 		"read":true,
-		"write":false
+		"write":false,
+		"unit": ["dB"]
 	},
 	"button":{
 		"category":"button",
