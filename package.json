@@ -3,5 +3,9 @@
   "version": "0.0.8",
   "dependencies": {
 
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iobroker-community-adapters/ioBroker.iobroker-adapter-helpers"
   }
 }
